@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".CalificacionConductor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VIAJE FINALIZADO"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="18dp"/>
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="202dp"
+            android:layout_height="202dp"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_fileName="Animation-check.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desde"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/textViewOriginCalificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="avenida "
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasta"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/textViewDestinationCalificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="avenida "
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginTop="6dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingbarCalificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="29dp"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalificacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="CALIFICAR CONDUCTOR"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:layout_margin="18dp">
+
+    </Button>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

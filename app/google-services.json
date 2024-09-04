@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "295507992816",
+    "project_id": "buscadortaxis",
+    "storage_bucket": "buscadortaxis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295507992816:android:9074991cc08d7523656235",
+        "android_client_info": {
+          "package_name": "es.upv.etsit.atelem.buscadortaxis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtmot18gTNVyV_xHtBULTggJrR8K6S_l4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BuscadorTaxis"
+        tools:targetApi="31">
+        <activity
+            android:name=".CalificacionConductor"
+            android:exported="false" />
+        <activity
+            android:name=".CalificacionCliente"
+            android:exported="false" />
+        <activity
+            android:name=".MapaConductorReserva"
+            android:exported="false" />
+        <activity
+            android:name=".MapaClienteReserva"
+            android:exported="false" />
+
+        <receiver
+            android:name=".recibos.AceptoRecibos"
+            android:exported="true" />
+        <receiver
+            android:name=".recibos.CanceloRecibos"
+            android:exported="true" />
+
+        <service
+            android:name=".servicios.MiFirebaseMessagingCliente"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".PedirConductor"
+            android:exported="false" />
+        <activity
+            android:name=".DetailPedido"
+            android:exported="false"
+            android:parentActivityName=".MapaCliente" />
+        <activity
+            android:name=".MapaConductor"
+            android:exported="false" />
+        <activity
+            android:name=".MapaCliente"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterConductor"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false"
+            android:parentActivityName=".SeleccionOpcionAuth" />
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:parentActivityName=".SeleccionOpcionAuth" />
+        <activity
+            android:name=".SeleccionOpcionAuth"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+    </application>
+
+</manifest>
